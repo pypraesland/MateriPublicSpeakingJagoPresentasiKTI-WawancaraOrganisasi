@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materi Lengkap: Presentasi Ilmiah & Wawancara</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Nunito', sans-serif; background-color: #fffbeb; color: #1e293b; overflow-x: hidden; }
+        h1, h2, h3, h4, .font-heading { font-family: 'Fredoka', sans-serif; }
+        
+        .slide-container {
+            max-width: 900px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            padding: 30px 20px;
+        }
+
+        .slide-card {
+            background: white;
+            border-radius: 30px;
+            box-shadow: 8px 8px 0px rgba(0, 0, 0, 0.1); /* Fun retro shadow */
+            overflow: hidden;
+            border: 4px solid #1e293b; /* Bold black border */
+            transition: transform 0.3s;
+            position: relative;
+        }
+        
+        .slide-card:hover { transform: translate(-4px, -4px); box-shadow: 12px 12px 0px rgba(0, 0, 0, 0.15); }
+
+        .slide-header {
+            padding: 20px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 4px solid #1e293b;
+        }
+
+        .slide-content { padding: 30px; }
+
+        .highlight-box {
+            background-color: #fef08a;
+            border-radius: 16px;
+            padding: 20px;
+            border: 3px solid #1e293b;
+            margin-top: 20px;
+            box-shadow: 4px 4px 0px #1e293b;
+        }
+
+        .example-block {
+            background-color: #f0f9ff;
+            border: 3px solid #1e293b;
+            border-radius: 12px;
+            padding: 15px;
+            margin: 10px 0;
+            font-style: italic;
+            font-size: 0.95rem;
+            color: #475569;
+            box-shadow: 4px 4px 0px #bae6fd;
+        }
+
+        .tag-pill {
+            display: inline-block;
+            padding: 6px 14px;
+            border-radius: 50px;
+            font-size: 0.75rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            border: 2px solid #1e293b;
+        }
+
+        /* Fun Blobs Background */
+        .blob {
+            position: absolute;
+            z-index: -1;
+            filter: blur(40px);
+            opacity: 0.7;
+        }
+        
+        /* Pattern Background */
+        .bg-pattern {
+            background-image: radial-gradient(#cbd5e1 2px, transparent 2px);
+            background-size: 24px 24px;
+        }
+    </style>
+</head>
+<body class="bg-pattern">
+
+    <!-- Background Blobs -->
+    <div class="fixed inset-0 overflow-hidden pointer-events-none">
+        <div class="blob w-96 h-96 bg-yellow-300 top-[-100px] left-[-100px] animate-pulse"></div>
+        <div class="blob w-96 h-96 bg-pink-300 bottom-[-100px] right-[-100px] animate-pulse" style="animation-delay: 2s;"></div>
+        <div class="blob w-64 h-64 bg-cyan-300 top-[40%] right-[-50px] animate-pulse" style="animation-delay: 1s;"></div>
+    </div>
+
+    <div class="slide-container">
+
+        <!-- SLIDE 1: COVER -->
+        <div class="slide-card bg-white">
+            <div class="bg-gradient-to-br from-yellow-100 via-orange-100 to-pink-100 p-12 text-center relative overflow-hidden">
+                <span class="inline-block bg-yellow-400 text-slate-900 px-4 py-1 rounded-full text-xs font-black shadow-[4px_4px_0px_#1e293b] border-2 border-slate-900 mb-6 transform -rotate-2">
+                    🚀 KELAS PRIVAT EKSKLUSIF
+                </span>
+                <h1 class="text-5xl md:text-7xl font-black text-slate-900 mb-4 leading-tight drop-shadow-sm">
+                    Mastering<br><span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">Scientific Presentation</span>
+                </h1>
+                <h2 class="text-2xl md:text-3xl font-bold text-slate-700 mb-8 bg-white inline-block px-4 py-2 rounded-xl border-2 border-slate-900 shadow-[4px_4px_0px_#94a3b8] transform rotate-1">
+                    & Organization Interview Prep
+                </h2>
+                <p class="text-slate-500 font-bold bg-white/50 px-4 py-1 rounded-full inline-block">5 Hari Menuju Panggung Juara</p>
+            </div>
+        </div>
+
+        <!-- ================= HARI 1 ================= -->
+        
+        <div class="slide-card bg-blue-50 p-8 flex items-center gap-6 border-l-[12px] border-l-blue-500">
+            <div class="bg-blue-500 text-white w-20 h-20 rounded-2xl flex items-center justify-center text-4xl font-black shadow-[6px_6px_0px_#1e293b] border-2 border-slate-900 transform -rotate-3">1</div>
+            <div>
+                <h3 class="text-blue-600 font-black tracking-widest text-sm uppercase mb-1 bg-white px-2 py-1 inline-block rounded border-2 border-blue-200">HARI PERTAMA</h3>
+                <h2 class="text-4xl font-black text-slate-900 mt-1">Bedah Anatomi Karya Ilmiah</h2>
+            </div>
+        </div>
+
+        <!-- Slide: Definisi & Tujuan -->
+        <div class="slide-card">
+            <div class="slide-header bg-blue-100">
+                <h3 class="font-bold text-xl text-blue-900 flex items-center gap-2"><i data-lucide="book-open" class="w-6 h-6 text-blue-600"></i> Apa itu Presentasi Ilmiah?</h3>
+            </div>
+            <div class="slide-content">
+                <div class="bg-yellow-50 border-2 border-yellow-400 p-4 rounded-xl mb-6 shadow-[4px_4px_0px_#facc15]">
+                    <p class="text-slate-800 font-bold text-lg text-center">🚫 Presentasi Ilmiah ≠ Membaca Makalah! 🚫</p>
+                </div>
+                <p class="text-slate-700 mb-6 leading-relaxed text-lg">
+                    <strong>Definisi:</strong> Seni menyampaikan gagasan kompleks dan data penelitian menjadi cerita yang sederhana, menarik, dan meyakinkan dalam waktu singkat (biasanya 7-10 menit).
+                </p>
+                <div class="grid md:grid-cols-2 gap-4">
+                    <div class="bg-green-50 p-5 rounded-2xl border-2 border-green-400 shadow-[4px_4px_0px_#4ade80]">
+                        <h4 class="font-black text-green-700 mb-2 flex items-center gap-2"><i data-lucide="check-circle" class="w-5 h-5"></i> Tujuan Utama:</h4>
+                        <ul class="text-sm text-slate-700 list-disc pl-4 space-y-2 font-medium">
+                            <li>Meyakinkan juri bahwa masalah ini <strong>URGENT</strong>.</li>
+                            <li>Membuktikan solusi/gagasan kita <strong>VALID</strong> & <strong>BARU</strong>.</li>
+                            <li>Menunjukkan kelayakan implementasi.</li>
+                        </ul>
+                    </div>
+                    <div class="bg-red-50 p-5 rounded-2xl border-2 border-red-400 shadow-[4px_4px_0px_#f87171]">
+                        <h4 class="font-black text-red-700 mb-2 flex items-center gap-2"><i data-lucide="x-circle" class="w-5 h-5"></i> Kesalahan Umum:</h4>
+                        <ul class="text-sm text-slate-700 list-disc pl-4 space-y-2 font-medium">
+                            <li>Terlalu banyak teks di slide (Copy-Paste makalah).</li>
+                            <li>Membaca slide membelakangi juri.</li>
+                            <li>Suara monoton seperti robot.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide: Bedah Struktur (Elaborated) -->
+        <div class="slide-card">
+            <div class="slide-header bg-blue-100">
+                <h3 class="font-bold text-xl text-blue-900 flex items-center gap-2"><i data-lucide="layers" class="w-6 h-6 text-blue-600"></i> Struktur Presentasi Juara</h3>
+            </div>
+            <div class="slide-content space-y-6">
+                <p class="text-slate-600 font-medium">Jangan hanya 4 slide! Struktur presentasi lomba yang ideal (7-10 menit) adalah seperti ini:</p>
+                
+                <div class="space-y-4">
+                    <!-- Item 1 -->
+                    <div class="flex gap-4 items-center bg-white border-2 border-slate-100 p-3 rounded-xl hover:border-blue-400 transition hover:shadow-md">
+                        <div class="w-10 h-10 bg-blue-500 text-white rounded-full flex items-center justify-center font-black flex-shrink-0 border-2 border-slate-900">1</div>
+                        <div>
+                            <h4 class="font-black text-slate-800">The Hook (Pembuka) - 10%</h4>
+                            <p class="text-sm text-slate-600">Fakta mengejutkan, pertanyaan retoris, atau drama singkat. Tujuannya merebut perhatian juri.</p>
+                        </div>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="flex gap-4 items-center bg-white border-2 border-slate-100 p-3 rounded-xl hover:border-blue-400 transition hover:shadow-md">
+                        <div class="w-10 h-10 bg-blue-500 text-white rounded-full flex items-center justify-center font-black flex-shrink-0 border-2 border-slate-900">2</div>
+                        <div>
+                            <h4 class="font-black text-slate-800">Masalah (The Problem) - 20%</h4>
+                            <p class="text-sm text-slate-600">Gambarkan kegelisahan. Tunjukkan data betapa parahnya masalah jika tidak diselesaikan.</p>
+                        </div>
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="flex gap-4 items-center bg-white border-2 border-slate-100 p-3 rounded-xl hover:border-blue-400 transition hover:shadow-md">
+                        <div class="w-10 h-10 bg-blue-500 text-white rounded-full flex items-center justify-center font-black flex-shrink-0 border-2 border-slate-900">3</div>
+                        <div>
+                            <h4 class="font-black text-slate-800">Solusi (The Idea) - 40%</h4>
+                            <p class="text-sm text-slate-600">Jelaskan inovasimu. Bagaimana cara kerjanya? Gunakan skema/diagram, bukan teks panjang.</p>
+                        </div>
+                    </div>
+                    <!-- Item 4 -->
+                    <div class="flex gap-4 items-center bg-white border-2 border-slate-100 p-3 rounded-xl hover:border-blue-400 transition hover:shadow-md">
+                        <div class="w-10 h-10 bg-blue-500 text-white rounded-full flex items-center justify-center font-black flex-shrink-0 border-2 border-slate-900">4</div>
+                        <div>
+                            <h4 class="font-black text-slate-800">Analisis & Implementasi - 20%</h4>
+                            <p class="text-sm text-slate-600">Analisis SWOT, biaya, atau cara penerapan. Buktikan ini realistis.</p>
+                        </div>
+                    </div>
+                    <!-- Item 5 -->
+                    <div class="flex gap-4 items-center bg-white border-2 border-slate-100 p-3 rounded-xl hover:border-blue-400 transition hover:shadow-md">
+                        <div class="w-10 h-10 bg-blue-500 text-white rounded-full flex items-center justify-center font-black flex-shrink-0 border-2 border-slate-900">5</div>
+                        <div>
+                            <h4 class="font-black text-slate-800">Penutup (The Call to Action) - 10%</h4>
+                            <p class="text-sm text-slate-600">Kesimpulan kuat dan kalimat penutup yang <em>memorable</em>.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide: Analisis Abstrak (Praktik) -->
+        <div class="slide-card border-blue-500">
+            <div class="slide-header bg-blue-600 text-white">
+                <h3 class="font-bold text-xl flex items-center gap-2"><i data-lucide="search" class="w-6 h-6"></i> PRAKTIK: Analisis Abstrak</h3>
+                <span class="tag-pill bg-white text-blue-600">LATIHAN</span>
+            </div>
+            <div class="slide-content">
+                <p class="text-sm text-slate-600 mb-4 font-bold">Mari bedah abstrak berikut dan temukan <strong>3 WOW POINTS</strong>-nya:</p>
+                
+                <div class="bg-white border-4 border-slate-200 p-6 rounded-2xl shadow-inner mb-6 text-sm text-slate-700 leading-relaxed font-serif relative">
+                    <div class="absolute -top-3 -left-3 bg-slate-800 text-white px-3 py-1 text-xs font-bold rounded transform -rotate-3">STUDI KASUS</div>
+                    <strong class="block mb-2 text-slate-900 font-sans text-lg">Judul: "ECO-BRICK: Pemanfaatan Limbah Masker Medis sebagai Campuran Batako Ramah Lingkungan"</strong>
+                    "Limbah masker medis meningkat 300% selama pandemi, mencapai 5 ton/hari di Jakarta. Limbah ini sulit terurai (polipropilena). Penelitian ini mengolah limbah masker yang disterilkan menjadi campuran beton. Hasil uji tekan menunjukkan penambahan 5% cacahan masker meningkatkan kuat tekan beton hingga 20% dibandingkan batako biasa, sekaligus mengurangi biaya produksi sebesar 15%."
+                </div>
+
+                <div class="highlight-box bg-blue-50 border-blue-400 shadow-[4px_4px_0px_#60a5fa]">
+                    <h4 class="font-black text-blue-800 mb-3 text-lg">🔍 Identifikasi Wow Points:</h4>
+                    <ul class="list-disc pl-5 space-y-2 text-sm text-slate-800 font-medium">
+                        <li><strong>Urgency (Masalah):</strong> Limbah masker naik 300% (5 ton/hari).</li>
+                        <li><strong>Novelty (Kebaruan):</strong> Mengubah limbah medis berbahaya menjadi material konstruksi berguna.</li>
+                        <li><strong>Impact (Dampak Terukur):</strong> Kuat tekan naik 20%, Biaya turun 15%. (Angka ini wajib di-highlight di slide!).</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- ================= HARI 2 ================= -->
+
+        <div class="slide-card bg-purple-50 p-8 flex items-center gap-6 border-l-[12px] border-l-purple-500">
+            <div class="bg-purple-500 text-white w-20 h-20 rounded-2xl flex items-center justify-center text-4xl font-black shadow-[6px_6px_0px_#1e293b] border-2 border-slate-900 transform -rotate-3">2</div>
+            <div>
+                <h3 class="text-purple-600 font-black tracking-widest text-sm uppercase mb-1 bg-white px-2 py-1 inline-block rounded border-2 border-purple-200">HARI KEDUA</h3>
+                <h2 class="text-4xl font-black text-slate-900 mt-1">Killer Opening & The Art of Delivery</h2>
+            </div>
+        </div>
+
+        <!-- Slide: Teknik Hook Detail -->
+        <div class="slide-card">
+            <div class="slide-header bg-purple-100">
+                <h3 class="font-bold text-xl text-purple-900 flex items-center gap-2"><i data-lucide="zap" class="w-6 h-6 text-purple-600"></i> Bedah Teknik Killer Opening</h3>
+            </div>
+            <div class="slide-content space-y-6">
+                
+                <!-- Teknik 1 -->
+                <div class="relative pl-6 border-l-4 border-purple-300">
+                    <h4 class="font-black text-slate-800 mb-1 text-lg">1. The Shocking Fact (Fakta Mengejutkan)</h4>
+                    <p class="text-sm text-slate-600 mb-2 font-bold">Gunakan data statistik yang membuat orang terbelalak.</p>
+                    <div class="example-block bg-purple-50 border-purple-500 shadow-[4px_4px_0px_#d8b4fe]">
+                        "Tahukah Anda? Dalam waktu 5 menit saya berdiri di sini, ada 10 balita di Indonesia meninggal karena diare akibat air kotor. 10 nyawa, lenyap begitu saja."
+                    </div>
+                </div>
+
+                <!-- Teknik 2 -->
+                <div class="relative pl-6 border-l-4 border-purple-300">
+                    <h4 class="font-black text-slate-800 mb-1 text-lg">2. The Emotional Story (Cerita Emosional)</h4>
+                    <p class="text-sm text-slate-600 mb-2 font-bold">Bawa juri masuk ke dalam sebuah kisah nyata.</p>
+                    <div class="example-block bg-purple-50 border-purple-500 shadow-[4px_4px_0px_#d8b4fe]">
+                        "Ini adalah Bu Sari. Setiap hari, beliau harus berjalan 5 kilometer sambil menggendong 20 liter air bersih. Bayangkan jika itu ibu kita..."
+                    </div>
+                </div>
+
+                <!-- Teknik 3 -->
+                <div class="relative pl-6 border-l-4 border-purple-300">
+                    <h4 class="font-black text-slate-800 mb-1 text-lg">3. Theatrical Opening (Drama Singkat 1-2 Menit)</h4>
+                    <p class="text-sm text-slate-600 mb-2 font-bold">Sangat efektif untuk tim! Lakonkan masalah di panggung.</p>
+                    <div class="example-block bg-purple-50 border-purple-500 shadow-[4px_4px_0px_#d8b4fe]">
+                        <strong>Aktor A (Pasien):</strong> (Batuk-batuk hebat, memegang dada) "Dok.. sesak.. mahal sekali obatnya.."<br>
+                        <strong>Aktor B (Narator):</strong> (Masuk tiba-tiba) "Pemandangan ini terjadi setiap hari di RS Paru. Mahalnya obat impor mencekik pasien..."<br>
+                        <strong>Semua Tim:</strong> (Serentak) "Oleh karena itu, kami persembahkan HERBAL-X!"
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide: Gestur & Mimik Detail -->
+        <div class="slide-card">
+            <div class="slide-header bg-purple-100">
+                <h3 class="font-bold text-xl text-purple-900 flex items-center gap-2"><i data-lucide="user" class="w-6 h-6 text-purple-600"></i> Gestur & Mimik: Bahasa Non-Verbal</h3>
+            </div>
+            <div class="slide-content">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-red-50 p-6 rounded-2xl border-2 border-red-200">
+                        <h4 class="font-black text-red-600 mb-4 border-b-2 border-red-200 pb-2 text-lg">❌ Jangan Lakukan:</h4>
+                        <ul class="text-sm text-slate-700 space-y-3 font-medium">
+                            <li class="flex items-center gap-2"><i data-lucide="x" class="w-5 h-5 text-red-500"></i> <strong>The Fig Leaf:</strong> Tangan menutup area vital (terlihat takut).</li>
+                            <li class="flex items-center gap-2"><i data-lucide="x" class="w-5 h-5 text-red-500"></i> <strong>Hands in Pocket:</strong> Tangan di saku (terlihat arogan/malas).</li>
+                            <li class="flex items-center gap-2"><i data-lucide="x" class="w-5 h-5 text-red-500"></i> <strong>Pointing Finger:</strong> Menunjuk juri dengan telunjuk (agresif).</li>
+                        </ul>
+                    </div>
+                    <div class="bg-green-50 p-6 rounded-2xl border-2 border-green-200">
+                        <h4 class="font-black text-green-600 mb-4 border-b-2 border-green-200 pb-2 text-lg">✅ Lakukan Ini (Contoh Konkret):</h4>
+                        <ul class="text-sm text-slate-700 space-y-3 font-medium">
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-5 h-5 text-green-500"></i> <strong>Open Palm:</strong> Tangan terbuka saat menjelaskan solusi (mengundang/jujur).</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-5 h-5 text-green-500"></i> <strong>The Chop:</strong> Gerakan memotong tegas saat menekankan poin penting/fakta.</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-5 h-5 text-green-500"></i> <strong>Mimik Wajah:</strong> Kerutkan dahi saat bicara "Masalah", Senyum lebar saat bicara "Solusi".</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ================= HARI 3 ================= -->
+
+        <div class="slide-card bg-pink-50 p-8 flex items-center gap-6 border-l-[12px] border-l-pink-500">
+            <div class="bg-pink-500 text-white w-20 h-20 rounded-2xl flex items-center justify-center text-4xl font-black shadow-[6px_6px_0px_#1e293b] border-2 border-slate-900 transform -rotate-3">3</div>
+            <div>
+                <h3 class="text-pink-600 font-black tracking-widest text-sm uppercase mb-1 bg-white px-2 py-1 inline-block rounded border-2 border-pink-200">HARI KETIGA</h3>
+                <h2 class="text-4xl font-black text-slate-900 mt-1">Visualisasi & Stage Presence</h2>
+            </div>
+        </div>
+
+        <!-- Slide: Struktur Slide Lengkap -->
+        <div class="slide-card">
+            <div class="slide-header bg-pink-100">
+                <h3 class="font-bold text-xl text-pink-700 flex items-center gap-2"><i data-lucide="monitor" class="w-6 h-6 text-pink-500"></i> Praktik: Bikin 10 Slide Wajib!</h3>
+                <span class="tag-pill bg-white text-pink-600">CANVA TIME</span>
+            </div>
+            <div class="slide-content">
+                <p class="text-sm text-slate-600 mb-6 font-bold bg-pink-50 inline-block px-3 py-1 rounded">Buka Canva. Kita buat 10 halaman ini sekarang juga:</p>
+                <div class="grid grid-cols-2 gap-4 text-xs md:text-sm">
+                    <div class="p-3 bg-white rounded-xl border-2 border-slate-100 font-bold shadow-sm hover:border-pink-300 transition">1. Slide HOOK (Gambar/Quote besar)</div>
+                    <div class="p-3 bg-white rounded-xl border-2 border-slate-100 font-bold shadow-sm hover:border-pink-300 transition">2. Judul KTI + Tim</div>
+                    <div class="p-3 bg-white rounded-xl border-2 border-slate-100 font-bold shadow-sm hover:border-pink-300 transition">3. Masalah Utama (Data & Fakta)</div>
+                    <div class="p-3 bg-white rounded-xl border-2 border-slate-100 font-bold shadow-sm hover:border-pink-300 transition">4. Manfaat & Tujuan Penelitian</div>
+                    <div class="p-3 bg-white rounded-xl border-2 border-slate-100 font-bold shadow-sm hover:border-pink-300 transition">5. Teori yang Digunakan (Singkat)</div>
+                    <div class="p-3 bg-white rounded-xl border-2 border-slate-100 font-bold shadow-sm hover:border-pink-300 transition">6. Metode Penelitian (Diagram Alur)</div>
+                    <div class="p-3 bg-white rounded-xl border-2 border-slate-100 font-bold shadow-sm hover:border-pink-300 transition">7. Hasil & Pembahasan (Grafik/Tabel)</div>
+                    <div class="p-3 bg-white rounded-xl border-2 border-slate-100 font-bold shadow-sm hover:border-pink-300 transition">8. Implementasi/Prototipe</div>
+                    <div class="p-3 bg-white rounded-xl border-2 border-slate-100 font-bold shadow-sm hover:border-pink-300 transition">9. Simpulan</div>
+                    <div class="p-3 bg-white rounded-xl border-2 border-slate-100 font-bold shadow-sm hover:border-pink-300 transition">10. Penutup (Quote/Pantun)</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide: Stage Presence Detail -->
+        <div class="slide-card">
+            <div class="slide-header bg-pink-100">
+                <h3 class="font-bold text-xl text-pink-700 flex items-center gap-2"><i data-lucide="move" class="w-6 h-6 text-pink-500"></i> Teknik Stage Presence (Penguasaan Panggung)</h3>
+            </div>
+            <div class="slide-content space-y-6">
+                
+                <div class="bg-white p-4 rounded-xl border-2 border-pink-100 shadow-sm">
+                    <h4 class="font-black text-pink-600 text-lg mb-2">1. Teknik Anchoring (Jangkar)</h4>
+                    <p class="text-sm text-slate-700 mb-2">Bagi panggung menjadi 3 zona imajiner:</p>
+                    <div class="flex gap-2">
+                        <div class="flex-1 bg-red-50 p-2 rounded text-xs text-center border border-red-100"><strong>Posisi Kiri</strong><br>Masalah (Negatif)</div>
+                        <div class="flex-1 bg-yellow-50 p-2 rounded text-xs text-center border border-yellow-100"><strong>Posisi Tengah</strong><br>Solusi/Ide (Netral)</div>
+                        <div class="flex-1 bg-green-50 p-2 rounded text-xs text-center border border-green-100"><strong>Posisi Kanan</strong><br>Harapan (Positif)</div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-4 rounded-xl border-2 border-pink-100 shadow-sm">
+                    <h4 class="font-black text-pink-600 text-lg mb-2">2. Triangle Walk</h4>
+                    <p class="text-sm text-slate-700">Bergeraklah membentuk segitiga. Maju ke depan (mendekati juri) saat ingin menekankan poin yang sangat penting atau emosional. Mundur kembali saat memberikan jeda.</p>
+                </div>
+
+                <div class="bg-white p-4 rounded-xl border-2 border-pink-100 shadow-sm">
+                    <h4 class="font-black text-pink-600 text-lg mb-2">3. The Power Pause</h4>
+                    <p class="text-sm text-slate-700">Diamlah selama 3 detik sebelum mengucapkan kalimat kunci. Diam itu powerful untuk menarik perhatian.</p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- ================= HARI 4 ================= -->
+
+        <div class="slide-card bg-orange-50 p-8 flex items-center gap-6 border-l-[12px] border-l-orange-500">
+            <div class="bg-orange-500 text-white w-20 h-20 rounded-2xl flex items-center justify-center text-4xl font-black shadow-[6px_6px_0px_#1e293b] border-2 border-slate-900 transform -rotate-3">4</div>
+            <div>
+                <h3 class="text-orange-600 font-black tracking-widest text-sm uppercase mb-1 bg-white px-2 py-1 inline-block rounded border-2 border-orange-200">HARI KEEMPAT</h3>
+                <h2 class="text-4xl font-black text-slate-900 mt-1">Simulasi Full Forum</h2>
+            </div>
+        </div>
+
+        <div class="slide-card border-orange-400">
+            <div class="slide-content text-center py-12 bg-white">
+                <i data-lucide="play-circle" class="w-24 h-24 text-orange-500 mx-auto mb-6 animate-bounce"></i>
+                <h2 class="text-4xl font-black text-slate-800 mb-4 tracking-tight">SHOW TIME! 🎬</h2>
+                <p class="text-slate-600 mb-10 max-w-lg mx-auto text-lg font-medium">
+                    Hari ini kita praktik penuh. Anggap ruangan ini adalah panggung final lomba nasional. Tidak ada lagi latihan potong-potong.
+                </p>
+                
+                <div class="grid md:grid-cols-3 gap-6 text-left">
+                    <div class="bg-orange-50 p-6 rounded-2xl border-2 border-orange-200 shadow-md hover:scale-105 transition">
+                        <strong class="block text-orange-600 text-4xl mb-2 font-heading">01</strong>
+                        <span class="text-lg font-black text-slate-800 block">Presentasi</span>
+                        <p class="text-sm text-slate-600 mt-2 font-bold">10 Menit Full</p>
+                        <p class="text-xs text-slate-500">Full team, full slide, full costume.</p>
+                    </div>
+                    <div class="bg-orange-50 p-6 rounded-2xl border-2 border-orange-200 shadow-md hover:scale-105 transition">
+                        <strong class="block text-orange-600 text-4xl mb-2 font-heading">02</strong>
+                        <span class="text-lg font-black text-slate-800 block">Q&A Panelis</span>
+                        <p class="text-sm text-slate-600 mt-2 font-bold">5-10 Menit</p>
+                        <p class="text-xs text-slate-500">Dicecar pertanyaan kritis juri.</p>
+                    </div>
+                    <div class="bg-orange-50 p-6 rounded-2xl border-2 border-orange-200 shadow-md hover:scale-105 transition">
+                        <strong class="block text-orange-600 text-4xl mb-2 font-heading">03</strong>
+                        <span class="text-lg font-black text-slate-800 block">Evaluasi</span>
+                        <p class="text-sm text-slate-600 mt-2 font-bold">Feedback 360°</p>
+                        <p class="text-xs text-slate-500">Detail dari mentor & teman.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ================= HARI 5 ================= -->
+
+        <div class="slide-card bg-teal-50 p-8 flex items-center gap-6 border-l-[12px] border-l-teal-500">
+            <div class="bg-teal-500 text-white w-20 h-20 rounded-2xl flex items-center justify-center text-4xl font-black shadow-[6px_6px_0px_#1e293b] border-2 border-slate-900 transform -rotate-3">5</div>
+            <div>
+                <h3 class="text-teal-600 font-black tracking-widest text-sm uppercase mb-1 bg-white px-2 py-1 inline-block rounded border-2 border-teal-200">HARI KELIMA</h3>
+                <h2 class="text-4xl font-black text-slate-900 mt-1">Mastering Interview</h2>
+            </div>
+        </div>
+
+        <!-- Slide: Definisi & Tujuan Wawancara -->
+        <div class="slide-card">
+            <div class="slide-header bg-teal-100">
+                <h3 class="font-bold text-xl text-teal-900 flex items-center gap-2"><i data-lucide="help-circle" class="w-6 h-6 text-teal-600"></i> Wawancara Organisasi: The Basics</h3>
+            </div>
+            <div class="slide-content space-y-6">
+                <div class="bg-white border-2 border-teal-100 p-5 rounded-xl shadow-sm">
+                    <h4 class="font-black text-slate-800 text-lg mb-2">Definisi:</h4>
+                    <p class="text-sm text-slate-600 font-medium">Proses tanya jawab antara calon anggota dan pengurus untuk menggali potensi, karakter, dan komitmen calon yang tidak tertulis di formulir pendaftaran.</p>
+                </div>
+                <div>
+                    <h4 class="font-black text-slate-800 text-lg mb-3">Tujuan Wawancara (Apa yang dicari?):</h4>
+                    <div class="grid md:grid-cols-3 gap-4">
+                        <div class="bg-teal-50 p-4 rounded-xl text-center border border-teal-200">
+                            <i data-lucide="file-check" class="w-8 h-8 text-teal-500 mx-auto mb-2"></i>
+                            <strong class="block text-slate-800">Validasi Data</strong>
+                            <p class="text-xs text-slate-500">Cek kebenaran CV.</p>
+                        </div>
+                        <div class="bg-teal-50 p-4 rounded-xl text-center border border-teal-200">
+                            <i data-lucide="smile" class="w-8 h-8 text-teal-500 mx-auto mb-2"></i>
+                            <strong class="block text-slate-800">Culture Fit</strong>
+                            <p class="text-xs text-slate-500">Cocok gak sama tim?</p>
+                        </div>
+                        <div class="bg-teal-50 p-4 rounded-xl text-center border border-teal-200">
+                            <i data-lucide="brain-circuit" class="w-8 h-8 text-teal-500 mx-auto mb-2"></i>
+                            <strong class="block text-slate-800">Problem Solving</strong>
+                            <p class="text-xs text-slate-500">Cara hadapi tekanan.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide: Daftar Pertanyaan Wawancara -->
+        <div class="slide-card">
+            <div class="slide-header bg-teal-100">
+                <h3 class="font-bold text-xl text-teal-900 flex items-center gap-2"><i data-lucide="list" class="w-6 h-6 text-teal-600"></i> 10 Pertanyaan Paling Sering Muncul</h3>
+            </div>
+            <div class="slide-content">
+                <div class="grid md:grid-cols-2 gap-4 text-sm text-slate-700 font-bold">
+                    <div class="p-3 bg-slate-50 rounded-lg border border-slate-100">1. Ceritakan tentang diri kamu!</div>
+                    <div class="p-3 bg-slate-50 rounded-lg border border-slate-100">2. Apa kelebihan dan kekurangan terbesarmu?</div>
+                    <div class="p-3 bg-slate-50 rounded-lg border border-slate-100">3. Kenapa kamu ingin masuk organisasi ini?</div>
+                    <div class="p-3 bg-slate-50 rounded-lg border border-slate-100">4. Apa kontribusi yang bisa kamu berikan?</div>
+                    <div class="p-3 bg-slate-50 rounded-lg border border-slate-100">5. Bagaimana jika jadwal organisasi bentrok?</div>
+                    <div class="p-3 bg-slate-50 rounded-lg border border-slate-100">6. Ceritakan pengalamanmu memimpin tim.</div>
+                    <div class="p-3 bg-slate-50 rounded-lg border border-slate-100">7. Bagaimana caramu menghadapi teman pasif?</div>
+                    <div class="p-3 bg-slate-50 rounded-lg border border-slate-100">8. Seberapa besar komitmenmu (skala 1-10)?</div>
+                    <div class="p-3 bg-slate-50 rounded-lg border border-slate-100">9. Apa pencapaian terbesarmu sejauh ini?</div>
+                    <div class="p-3 bg-slate-50 rounded-lg border border-slate-100">10. Melamar divisi lain? Mana prioritasmu?</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide: Metode STAR (Detail Konkret) -->
+        <div class="slide-card border-teal-500 border-4">
+            <div class="slide-header bg-teal-600 text-white">
+                <h3 class="font-bold text-xl flex items-center gap-2"><i data-lucide="star" class="w-6 h-6 text-yellow-300"></i> Rumus Jawaban S.T.A.R</h3>
+            </div>
+            <div class="slide-content">
+                <p class="text-sm text-slate-600 mb-6 font-bold bg-teal-50 p-3 rounded-lg inline-block">Gunakan ini saat ditanya "Ceritakan pengalamanmu..." agar jawaban terstruktur.</p>
+                
+                <div class="space-y-4">
+                    <div class="flex gap-4 p-4 bg-teal-50 rounded-2xl border-2 border-teal-100 shadow-sm relative overflow-hidden">
+                        <div class="absolute right-0 top-0 text-[100px] font-black text-teal-200 leading-none -mt-4 opacity-30 select-none">S</div>
+                        <div class="font-black text-3xl text-teal-600 z-10">S</div>
+                        <div class="z-10">
+                            <strong class="block text-slate-900 text-base">Situation (Situasi)</strong>
+                            <p class="text-xs text-slate-600 mb-1">Jelaskan konteks masalahnya.</p>
+                            <p class="text-sm italic text-slate-700 font-medium bg-white p-2 rounded border border-teal-200">"Saat saya jadi ketua OSIS, dana pensi kurang 5 juta H-7 acara."</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 p-4 bg-teal-50 rounded-2xl border-2 border-teal-100 shadow-sm relative overflow-hidden">
+                        <div class="absolute right-0 top-0 text-[100px] font-black text-teal-200 leading-none -mt-4 opacity-30 select-none">T</div>
+                        <div class="font-black text-3xl text-teal-600 z-10">T</div>
+                        <div class="z-10">
+                            <strong class="block text-slate-900 text-base">Task (Tugas)</strong>
+                            <p class="text-xs text-slate-600 mb-1">Apa tanggung jawabmu?</p>
+                            <p class="text-sm italic text-slate-700 font-medium bg-white p-2 rounded border border-teal-200">"Saya bertanggung jawab mencari dana darurat tanpa membebani siswa."</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 p-4 bg-teal-100 rounded-2xl border-2 border-teal-400 shadow-md relative overflow-hidden transform scale-105">
+                        <div class="absolute right-0 top-0 text-[100px] font-black text-teal-300 leading-none -mt-4 opacity-30 select-none">A</div>
+                        <div class="font-black text-3xl text-teal-700 z-10">A</div>
+                        <div class="z-10">
+                            <strong class="block text-slate-900 text-base">Action (Aksi) - PALING PENTING!</strong>
+                            <p class="text-xs text-slate-600 mb-1">Apa langkah konkret yang KAMU lakukan?</p>
+                            <p class="text-sm italic text-slate-700 font-medium bg-white p-2 rounded border border-teal-300">"Saya mengumpulkan tim, menginisiasi jualan merchandise kilat, dan melobi 3 alumni untuk jadi donatur."</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 p-4 bg-teal-50 rounded-2xl border-2 border-teal-100 shadow-sm relative overflow-hidden">
+                        <div class="absolute right-0 top-0 text-[100px] font-black text-teal-200 leading-none -mt-4 opacity-30 select-none">R</div>
+                        <div class="font-black text-3xl text-teal-600 z-10">R</div>
+                        <div class="z-10">
+                            <strong class="block text-slate-900 text-base">Result (Hasil)</strong>
+                            <p class="text-xs text-slate-600 mb-1">Apa hasil akhirnya?</p>
+                            <p class="text-sm italic text-slate-700 font-medium bg-white p-2 rounded border border-teal-200">"Dana terkumpul 7 juta, surplus 2 juta, dan acara sukses besar."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="highlight-box bg-teal-600 text-white border-none mt-8 shadow-[4px_4px_0px_#1e293b]">
+                    <h4 class="font-bold flex items-center gap-2 mb-2 text-lg"><i data-lucide="users" class="w-6 h-6 text-yellow-300"></i> PRAKTIK ROLE PLAY 1-ON-1</h4>
+                    <p class="text-sm font-medium opacity-90">Berpasangan. Jawablah pertanyaan: <strong>"Ceritakan saat kamu menghadapi konflik dalam tim!"</strong> menggunakan STAR.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
